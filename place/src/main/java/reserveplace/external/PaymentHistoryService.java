@@ -12,6 +12,6 @@ public interface PaymentHistoryService {
     @RequestMapping(method = RequestMethod.POST, path = "/paymentHistories")
     public void paymentRequest(@RequestBody PaymentHistory paymentHistory);
 
-    @RequestMapping(method = RequestMethod.POST, path = "/paymentHistories")
+    @RequestMapping(method = RequestMethod.DELETE, path = "/paymentHistories")
     public void paymentCancel(@RequestBody PaymentHistory paymentHistory);
 }

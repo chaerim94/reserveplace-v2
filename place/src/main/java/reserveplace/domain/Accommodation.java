@@ -46,6 +46,9 @@ public class Accommodation {
     @PrePersist
     public void onPrePersist() {}
 
+    @PreRemove
+    public void onPreRemove() {}
+
     public static AccommodationRepository repository() {
         AccommodationRepository accommodationRepository = PlaceApplication.applicationContext.getBean(
             AccommodationRepository.class

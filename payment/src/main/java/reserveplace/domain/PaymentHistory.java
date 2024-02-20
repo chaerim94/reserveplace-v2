@@ -40,6 +40,9 @@ public class PaymentHistory {
         paymentCancelApproved.publishAfterCommit();
     }
 
+    @PreRemove
+    public void onPreRemove() {}
+
     public static PaymentHistoryRepository repository() {
         PaymentHistoryRepository paymentHistoryRepository = PaymentApplication.applicationContext.getBean(
             PaymentHistoryRepository.class
