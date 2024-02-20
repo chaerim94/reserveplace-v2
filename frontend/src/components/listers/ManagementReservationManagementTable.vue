@@ -70,6 +70,7 @@
                     { text: "orderId", value: "orderId" },
                     { text: "status", value: "status" },
                     { text: "usrId", value: "usrId" },
+                    { text: "stock", value: "stock" },
                 ],
             reservationManagement : [],
             newValue: {},
@@ -91,6 +92,7 @@
                 'orderId': 0,
                 'status': '',
                 'usrId': '',
+                'stock': 0,
             }
         },
         methods: {

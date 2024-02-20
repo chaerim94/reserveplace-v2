@@ -15,6 +15,7 @@ public class ReservationConfirmed extends AbstractEvent {
     private Long orderId;
     private String status;
     private String usrId;
+    private Integer stock;
 
     public ReservationConfirmed(ReservationManagement aggregate) {
         super(aggregate);

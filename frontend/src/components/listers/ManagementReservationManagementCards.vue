@@ -113,6 +113,7 @@
                 'orderId': 0,
                 'status': '',
                 'usrId': '',
+                'stock': 0,
             }
         },
         methods:{

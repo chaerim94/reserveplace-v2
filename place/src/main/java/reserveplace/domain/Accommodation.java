@@ -31,6 +31,8 @@ public class Accommodation {
 
     private Date endDt;
 
+    private Integer qty;
+
     @PostPersist
     public void onPostPersist() {
         ReservationPlaced reservationPlaced = new ReservationPlaced(this);

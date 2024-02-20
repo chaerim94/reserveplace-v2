@@ -10,4 +10,5 @@ public class ReservationManagement {
     private Long orderId;
     private String status;
     private String usrId;
+    private Integer stock;
 }

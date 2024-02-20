@@ -47,6 +47,7 @@
                             
                             
                             
+                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -57,6 +58,7 @@
                             [ UsrId :  {{data.usrId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ StrDt :  {{data.strDt }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ EndDt :  {{data.endDt }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Qty :  {{data.qty }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -131,6 +133,7 @@
                 'usrId': '',
                 'strDt': '2024-02-20',
                 'endDt': '2024-02-20',
+                'qty': 0,
             }
         },
         methods: {

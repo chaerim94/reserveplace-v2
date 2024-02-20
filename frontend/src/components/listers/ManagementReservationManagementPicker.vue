@@ -26,6 +26,9 @@
                             <v-list-item-subtitle>
                                 UsrId :  {{item.usrId }}
                             </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                Stock :  {{item.stock }}
+                            </v-list-item-subtitle>
                         </v-list-item-content>
 
                         <v-list-item-action>
@@ -77,6 +80,8 @@
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
                     obj['rsvId'] = arr[4]; 
+                    
+                    
                     
                     
                     

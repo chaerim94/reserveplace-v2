@@ -26,6 +26,9 @@
             <div>
                 <Date label="EndDt" v-model="item.endDt" :editMode="editMode" @change="change" />
             </div>
+            <div>
+                <Number label="Qty" v-model="item.qty" :editMode="editMode" @change="change" />
+            </div>
         </v-card-text>
 
         <v-card-actions>

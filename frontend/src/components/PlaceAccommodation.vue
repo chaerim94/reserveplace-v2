@@ -23,6 +23,7 @@
             <String label="UsrId" v-model="value.usrId" :editMode="editMode" :inputUI="''"/>
             <Date label="StrDt" v-model="value.strDt" :editMode="editMode" :inputUI="''"/>
             <Date label="EndDt" v-model="value.endDt" :editMode="editMode" :inputUI="''"/>
+            <Number label="Qty" v-model="value.qty" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions>

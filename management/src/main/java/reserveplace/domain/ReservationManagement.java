@@ -25,6 +25,8 @@ public class ReservationManagement {
 
     private String usrId;
 
+    private Integer stock;
+
     @PostPersist
     public void onPostPersist() {
         ReservationConfirmed reservationConfirmed = new ReservationConfirmed(

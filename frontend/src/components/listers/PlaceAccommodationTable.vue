@@ -73,6 +73,7 @@
                     { text: "usrId", value: "usrId" },
                     { text: "strDt", value: "strDt" },
                     { text: "endDt", value: "endDt" },
+                    { text: "qty", value: "qty" },
                 ],
             accommodation : [],
             newValue: {},
@@ -97,6 +98,7 @@
                 'usrId': '',
                 'strDt': '2024-02-20',
                 'endDt': '2024-02-20',
+                'qty': 0,
             }
         },
         methods: {

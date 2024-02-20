@@ -18,6 +18,7 @@ public class ReservationPlaced extends AbstractEvent {
     private String usrId;
     private Date strDt;
     private Date endDt;
+    private Integer qty;
 
     public ReservationPlaced(Accommodation aggregate) {
         super(aggregate);

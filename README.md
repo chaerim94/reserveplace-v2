@@ -35,7 +35,7 @@ mvn spring-boot:run
 ## Test by API
 - place
 ```
- http :8088/accommodations orderId="orderId" placeNm="placeNm" placeId="placeId" status="status" usrId="usrId" strDt="strDt" endDt="endDt" 
+ http :8088/accommodations orderId="orderId" placeNm="placeNm" placeId="placeId" status="status" usrId="usrId" strDt="strDt" endDt="endDt" qty="qty" 
 ```
 - payment
 ```
@@ -43,7 +43,7 @@ mvn spring-boot:run
 ```
 - management
 ```
- http :8088/reservationManagements rsvId="rsvId" orderId="orderId" status="status" usrId="usrId" 
+ http :8088/reservationManagements rsvId="rsvId" orderId="orderId" status="status" usrId="usrId" stock="stock" 
 ```
 - notification
 ```
