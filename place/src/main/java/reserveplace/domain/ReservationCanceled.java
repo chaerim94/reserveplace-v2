@@ -18,6 +18,8 @@ public class ReservationCanceled extends AbstractEvent {
     private String usrId;
     private Date strDt;
     private Date endDt;
+    private Integer qty;
+    private Double amount;
 
     public ReservationCanceled(Accommodation aggregate) {
         super(aggregate);

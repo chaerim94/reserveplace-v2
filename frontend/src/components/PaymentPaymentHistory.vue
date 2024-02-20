@@ -20,7 +20,6 @@
             <Number label="OrderId" v-model="value.orderId" :editMode="editMode" :inputUI="''"/>
             <String label="UsrId" v-model="value.usrId" :editMode="editMode" :inputUI="''"/>
             <Number label="Amount" v-model="value.amount" :editMode="editMode" :inputUI="''"/>
-            <Date label="PayDt" v-model="value.payDt" :editMode="editMode" :inputUI="''"/>
             <String label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 

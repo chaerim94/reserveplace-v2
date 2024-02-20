@@ -70,7 +70,6 @@
                     { text: "orderId", value: "orderId" },
                     { text: "usrId", value: "usrId" },
                     { text: "amount", value: "amount" },
-                    { text: "payDt", value: "payDt" },
                     { text: "status", value: "status" },
                 ],
             paymentHistory : [],
@@ -93,7 +92,6 @@
                 'orderId': 0,
                 'usrId': '',
                 'amount': 0,
-                'payDt': '2024-02-20',
                 'status': '',
             }
         },

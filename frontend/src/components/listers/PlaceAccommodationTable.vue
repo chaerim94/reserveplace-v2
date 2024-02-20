@@ -74,6 +74,7 @@
                     { text: "strDt", value: "strDt" },
                     { text: "endDt", value: "endDt" },
                     { text: "qty", value: "qty" },
+                    { text: "amount", value: "amount" },
                 ],
             accommodation : [],
             newValue: {},
@@ -99,6 +100,7 @@
                 'strDt': '2024-02-20',
                 'endDt': '2024-02-20',
                 'qty': 0,
+                'amount': 0,
             }
         },
         methods: {

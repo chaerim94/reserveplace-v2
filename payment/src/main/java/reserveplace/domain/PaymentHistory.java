@@ -25,23 +25,21 @@ public class PaymentHistory {
 
     private Double amount;
 
-    private Date payDt;
-
     private String status;
 
     @PostPersist
     public void onPostPersist() {
         PaymentApproved paymentApproved = new PaymentApproved(this);
         paymentApproved.publishAfterCommit();
+    }
 
+    @PreRemove
+    public void onPreRemove() {
         PaymentCancelApproved paymentCancelApproved = new PaymentCancelApproved(
             this
         );
         paymentCancelApproved.publishAfterCommit();
     }
-
-    @PreRemove
-    public void onPreRemove() {}
 
     public static PaymentHistoryRepository repository() {
         PaymentHistoryRepository paymentHistoryRepository = PaymentApplication.applicationContext.getBean(

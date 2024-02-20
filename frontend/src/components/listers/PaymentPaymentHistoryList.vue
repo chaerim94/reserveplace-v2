@@ -45,7 +45,6 @@
                             
                             
                             
-                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -53,7 +52,6 @@
                             [ OrderId :  {{data.orderId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ UsrId :  {{data.usrId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Amount :  {{data.amount }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ PayDt :  {{data.payDt }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Status :  {{data.status }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
@@ -126,7 +124,6 @@
                 'orderId': 0,
                 'usrId': '',
                 'amount': 0,
-                'payDt': '2024-02-20',
                 'status': '',
             }
         },

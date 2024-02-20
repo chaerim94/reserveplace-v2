@@ -10,6 +10,5 @@ public class PaymentHistory {
     private Long orderId;
     private String usrId;
     private Double amount;
-    private Date payDt;
     private String status;
 }

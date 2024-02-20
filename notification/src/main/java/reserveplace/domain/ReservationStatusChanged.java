@@ -16,4 +16,6 @@ public class ReservationStatusChanged extends AbstractEvent {
     private String usrId;
     private Date strDt;
     private Date endDt;
+    private Integer qty;
+    private Double amount;
 }

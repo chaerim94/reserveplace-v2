@@ -33,23 +33,22 @@ public class Accommodation {
 
     private Integer qty;
 
+    private Double amount;
+
     @PostPersist
     public void onPostPersist() {
         ReservationPlaced reservationPlaced = new ReservationPlaced(this);
         reservationPlaced.publishAfterCommit();
     }
 
-    @PostUpdate
-    public void onPostUpdate() {
-        ReservationCanceled reservationCanceled = new ReservationCanceled(this);
-        reservationCanceled.publishAfterCommit();
-    }
-
     @PrePersist
     public void onPrePersist() {}
 
     @PreRemove
-    public void onPreRemove() {}
+    public void onPreRemove() {
+        ReservationCanceled reservationCanceled = new ReservationCanceled(this);
+        reservationCanceled.publishAfterCommit();
+    }
 
     public static AccommodationRepository repository() {
         AccommodationRepository accommodationRepository = PlaceApplication.applicationContext.getBean(

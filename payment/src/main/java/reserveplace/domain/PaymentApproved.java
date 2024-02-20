@@ -16,7 +16,6 @@ public class PaymentApproved extends AbstractEvent {
     private String usrId;
     private String status;
     private Double amount;
-    private Date payDt;
 
     public PaymentApproved(PaymentHistory aggregate) {
         super(aggregate);
